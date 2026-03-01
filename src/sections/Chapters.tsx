@@ -29,7 +29,7 @@ interface Chapter {
 const chapters: Chapter[] = [
   {
     id: 'chapter1',
-    icon: <Terminal className="w-6 h-6" />,
+    icon: <Terminal className="w-6 h-6 transition-all duration-300 group-hover:scale-110 group-hover:-rotate-6" />,
     title: 'Chapter 1: Python Fundamentals',
     subtitle: 'Variables, types, operators, and control structures',
     lessons: [
@@ -103,7 +103,7 @@ while compteur < 5:
   },
   {
     id: 'chapter2',
-    icon: <Database className="w-6 h-6" />,
+    icon: <Database className="w-6 h-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6" />,
     title: 'Chapter 2: Data Structures',
     subtitle: 'Lists, tuples, sets, dictionaries, and strings',
     lessons: [
@@ -251,7 +251,7 @@ print("monde" in texte)         # True`,
   },
   {
     id: 'chapter3',
-    icon: <Code className="w-6 h-6" />,
+    icon: <Code className="w-6 h-6 transition-all duration-300 group-hover:scale-110 group-hover:-rotate-12" />,
     title: 'Chapter 3: Functions & Advanced Topics',
     subtitle: 'Functions, file handling, exceptions, and modules',
     lessons: [
@@ -502,7 +502,7 @@ export default function Chapters() {
                   <AccordionItem value={chapter.id} className="border-none">
                     <AccordionTrigger className="px-6 py-6 hover:no-underline group">
                       <div className="flex items-center gap-4 text-left">
-                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-pink-DEFAULT to-purple-DEFAULT flex items-center justify-center text-white shadow-romantic group-hover:scale-110 transition-transform duration-300">
+                        <div className="group w-12 h-12 rounded-2xl bg-gradient-to-br from-pink-DEFAULT to-purple-DEFAULT hover:from-pink-deep hover:to-purple-deep flex items-center justify-center text-white shadow-romantic group-hover:scale-110 group-hover:shadow-love-glow transition-all duration-300">
                           {chapter.icon}
                         </div>
                         <div>

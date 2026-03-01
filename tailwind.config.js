@@ -55,6 +55,9 @@ module.exports = {
           gold: '#f7a8b8',
           blush: '#ffccd5',
         },
+        crimson: {
+          love: '#e74c7c',
+        },
         peach: {
           DEFAULT: '#ffb8a3',
           light: '#ffd4c4',

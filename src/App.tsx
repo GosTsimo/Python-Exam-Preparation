@@ -84,13 +84,17 @@ function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`relative px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 ${
+                className={`group relative px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 hover:scale-105 ${
                   isActive
-                    ? 'bg-gradient-to-r from-pink-DEFAULT to-purple-DEFAULT text-white shadow-romantic'
-                    : 'text-romantic-text-secondary hover:text-romantic-text hover:bg-pink-light/50'
+                    ? 'bg-gradient-to-r from-pink-DEFAULT to-purple-DEFAULT text-white shadow-romantic hover:shadow-love-glow'
+                    : 'text-romantic-text-secondary hover:text-romantic-text hover:bg-gradient-to-r hover:from-pink-light/30 hover:to-purple-light/30'
                 }`}
               >
-                <Icon className="w-4 h-4" />
+                <Icon className={`w-4 h-4 transition-all duration-300 ${
+                  isActive 
+                    ? 'text-white group-hover:scale-110' 
+                    : 'text-romantic-text-muted group-hover:text-pink-deep group-hover:scale-110 group-hover:rotate-12'
+                }`} />
                 <span className="hidden sm:inline">{item.label}</span>
               </button>
             );
@@ -101,13 +105,13 @@ function Navigation() {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-gradient-to-r from-pink-DEFAULT to-purple-DEFAULT text-white shadow-romantic-xl flex items-center justify-center transition-all duration-500 hover:scale-110 ${
+        className={`group fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-gradient-to-r from-pink-DEFAULT to-purple-DEFAULT hover:from-pink-deep hover:to-purple-deep text-white shadow-romantic-xl hover:shadow-love-glow flex items-center justify-center transition-all duration-500 hover:scale-110 ${
           isVisible
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 translate-y-10 pointer-events-none'
         }`}
       >
-        <ChevronUp className="w-6 h-6" />
+        <ChevronUp className="w-6 h-6 group-hover:scale-110 group-hover:-translate-y-0.5 transition-all duration-300" />
       </button>
     </>
   );

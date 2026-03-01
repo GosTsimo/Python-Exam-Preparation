@@ -14,40 +14,40 @@ interface Tip {
 
 const tips: Tip[] = [
   {
-    icon: <Lightbulb className="w-6 h-6" />,
+    icon: <Lightbulb className="w-6 h-6 transition-all duration-300 group-hover:text-yellow-600 group-hover:scale-110 group-hover:rotate-12" />,
     title: 'Practice Daily',
     content: 'Consistency is key! Even 30 minutes of coding every day is better than 3 hours once a week. Build a habit.',
-    color: 'from-yellow-300 to-orange-300',
+    color: 'from-yellow-400 to-orange-400',
   },
   {
-    icon: <Star className="w-6 h-6" />,
+    icon: <Star className="w-6 h-6 transition-all duration-300 group-hover:text-pink-600 group-hover:scale-110 group-hover:rotate-12" />,
     title: 'Use Meaningful Names',
     content: 'Choose variable names that describe their purpose. `age` is better than `a`. `student_names` is better than `sn`.',
-    color: 'from-pink-300 to-rose-300',
+    color: 'from-pink-400 to-rose-400',
   },
   {
-    icon: <Heart className="w-6 h-6" />,
+    icon: <Heart className="w-6 h-6 transition-all duration-300 group-hover:text-red-600 group-hover:scale-125 group-hover:animate-pulse" />,
     title: 'Love Your Errors',
     content: 'Error messages are your friends! They tell you exactly what went wrong and where. Read them carefully.',
-    color: 'from-red-300 to-pink-300',
+    color: 'from-red-400 to-pink-400',
   },
   {
-    icon: <Zap className="w-6 h-6" />,
+    icon: <Zap className="w-6 h-6 transition-all duration-300 group-hover:text-blue-600 group-hover:scale-110 group-hover:-rotate-12" />,
     title: 'DRY Principle',
     content: "Don't Repeat Yourself! If you find yourself copying code, create a function instead.",
-    color: 'from-blue-300 to-cyan-300',
+    color: 'from-blue-400 to-cyan-400',
   },
   {
-    icon: <Target className="w-6 h-6" />,
+    icon: <Target className="w-6 h-6 transition-all duration-300 group-hover:text-green-600 group-hover:scale-110" />,
     title: 'Plan Before Coding',
     content: 'Take a moment to understand the problem. Write pseudocode or draw a flowchart before writing actual code.',
-    color: 'from-green-300 to-emerald-300',
+    color: 'from-green-400 to-emerald-400',
   },
   {
-    icon: <Coffee className="w-6 h-6" />,
+    icon: <Coffee className="w-6 h-6 transition-all duration-300 group-hover:text-purple-600 group-hover:scale-110 group-hover:rotate-12" />,
     title: 'Take Breaks',
     content: 'Stuck on a problem? Step away for 10 minutes. A fresh perspective often brings the solution.',
-    color: 'from-purple-300 to-violet-300',
+    color: 'from-purple-400 to-violet-400',
   },
 ];
 
@@ -99,8 +99,8 @@ function TipCard({ tip, index }: { tip: Tip; index: number }) {
       >
         {/* Icon */}
         <div
-          className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${tip.color} flex items-center justify-center text-white mb-4 shadow-lg transition-transform duration-300 ${
-            isHovered ? 'scale-110 -translate-y-1' : ''
+          className={`group w-14 h-14 rounded-2xl bg-gradient-to-br ${tip.color} flex items-center justify-center text-white mb-4 shadow-lg transition-all duration-300 ${
+            isHovered ? 'scale-110 -translate-y-1 shadow-xl' : ''
           }`}
         >
           {tip.icon}

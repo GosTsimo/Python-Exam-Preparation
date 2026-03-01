@@ -234,7 +234,7 @@ export default function Quiz() {
         {/* Section Header */}
         <div className="quiz-title text-center mb-12 opacity-0">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-light rounded-full mb-6">
-            <HelpCircle className="w-4 h-4 text-purple-dark" />
+            <HelpCircle className="w-4 h-4 text-purple-deep hover:text-purple-dark hover:scale-110 transition-all duration-300" />
             <span className="text-sm font-medium text-romantic-text">Test Your Knowledge</span>
           </div>
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-romantic-text mb-4">
@@ -306,10 +306,10 @@ export default function Quiz() {
                           <div className="flex items-center justify-between">
                             <span>{option}</span>
                             {showResult && isCorrectAnswer && (
-                              <CheckCircle className="w-5 h-5 text-green-600" />
+                              <CheckCircle className="w-5 h-5 text-green-600 hover:scale-110 transition-all duration-300" />
                             )}
                             {showResult && isSelected && !isCorrectAnswer && (
-                              <XCircle className="w-5 h-5 text-red-600" />
+                              <XCircle className="w-5 h-5 text-red-600 hover:scale-110 transition-all duration-300" />
                             )}
                           </div>
                         </button>
@@ -327,14 +327,14 @@ export default function Quiz() {
                       <div className="flex items-center gap-2 mb-2">
                         {isCorrect ? (
                           <>
-                            <CheckCircle className="w-5 h-5 text-green-600" />
+                            <CheckCircle className="w-5 h-5 text-green-600 animate-pulse" />
                             <span className="font-semibold text-green-700">
                               Correct!
                             </span>
                           </>
                         ) : (
                           <>
-                            <XCircle className="w-5 h-5 text-red-600" />
+                            <XCircle className="w-5 h-5 text-red-600 animate-pulse" />
                             <span className="font-semibold text-red-700">
                               Incorrect
                             </span>
@@ -373,7 +373,7 @@ export default function Quiz() {
               /* Results Screen */
               <div className="p-8 text-center">
                 <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-yellow-300 to-orange-400 flex items-center justify-center">
-                  <Trophy className="w-10 h-10 text-white" />
+                  <Trophy className="w-10 h-10 text-white animate-bounce" />
                 </div>
                 <h3 className="font-display text-3xl font-bold text-romantic-text mb-2">
                   Quiz Complete!
@@ -403,9 +403,9 @@ export default function Quiz() {
                         className="flex items-center gap-2 text-sm"
                       >
                         {answers[i] === q.correctAnswer ? (
-                          <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 animate-pulse" />
                         ) : (
-                          <XCircle className="w-4 h-4 text-red-500 flex-shrink-0" />
+                          <XCircle className="w-4 h-4 text-red-500 flex-shrink-0 animate-pulse" />
                         )}
                         <span className="text-romantic-text-secondary">
                           Question {i + 1}
@@ -420,7 +420,7 @@ export default function Quiz() {
                   variant="outline"
                   className="w-full"
                 >
-                  <RotateCcw className="w-4 h-4 mr-2" />
+                  <RotateCcw className="w-4 h-4 mr-2 group-hover:rotate-180 transition-transform duration-300" />
                   Try Again
                 </Button>
               </div>

@@ -103,8 +103,8 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-romantic mb-8 animate-fade-in-up">
-          <Sparkles className="w-4 h-4 text-pink-dark" />
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full shadow-romantic mb-8 animate-fade-in-up border border-white/60">
+          <Sparkles className="w-4 h-4 text-pink-deep hover:text-crimson-love transition-all duration-300 hover:scale-110 hover:rotate-12" />
           <span className="text-sm font-medium text-romantic-text">Your Python Learning Journey</span>
         </div>
 
@@ -135,7 +135,7 @@ export default function Hero() {
           >
             <span className="relative z-10 flex items-center gap-2">
               Start Learning
-              <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
+              <ChevronDown className="w-5 h-5 group-hover:translate-y-1 group-hover:text-white transition-all duration-300 text-white/90" />
             </span>
             {/* Liquid fill effect */}
             <div className="absolute inset-0 bg-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
