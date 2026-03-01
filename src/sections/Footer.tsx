@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
           
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-romantic-text mb-4">
-            Made with <span className="text-red-400">love</span> for Python learners
+            Made with <span className="text-red-400">love</span> 
           </h2>
           
           <p className="text-romantic-text-secondary max-w-xl mx-auto">
