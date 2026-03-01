@@ -97,12 +97,16 @@
   }
   
   .glass-card {
-    @apply bg-white/85 backdrop-blur-xl border border-white/60;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     box-shadow: 0 8px 32px rgba(255, 143, 163, 0.18), 0 4px 16px rgba(199, 148, 247, 0.12);
   }
   
   .glass-card-strong {
-    @apply bg-white/92 backdrop-blur-2xl border border-white/70;
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
     box-shadow: 0 16px 48px rgba(255, 143, 163, 0.25), 0 8px 24px rgba(199, 148, 247, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.5);
   }
   
