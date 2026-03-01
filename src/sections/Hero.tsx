@@ -113,8 +113,8 @@ export default function Hero() {
           ref={titleRef}
           className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-romantic-text mb-6 leading-tight"
         >
-          Python Exam{' '}
-          <span className="text-gradient">Preparation</span>
+          Python Made {' '}
+          <span className="text-gradient">Simple & Beautiful</span>
         </h1>
 
         {/* Subtitle */}
@@ -122,8 +122,7 @@ export default function Hero() {
           ref={subtitleRef}
           className="text-lg sm:text-xl text-romantic-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Master Python with confidence and elegance. Your journey to exam success starts here with 
-          interactive lessons, exercises, and quizzes designed to make learning delightful.
+          Interactive lessons, smart exercises, and helpful tips designed to make exam preparation stress-free and effective.
         </p>
 
         {/* CTA Button */}
