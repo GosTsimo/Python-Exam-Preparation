@@ -77,7 +77,7 @@ export default function Footer() {
               <span>© 2025 Python Exam Prep</span>
               <span>•</span>
               <span className="flex items-center gap-1">
-                Made with <Heart className="w-3 h-3 text-red-400 fill-red-400 hover:scale-125 hover:text-red-500 transition-all duration-300 animate-pulse cursor-pointer" /> for students
+                Made with <Heart className="w-3 h-3 text-red-400 fill-red-400 hover:scale-125 hover:text-red-500 transition-all duration-300 animate-pulse cursor-pointer" /> for YOU
               </span>
             </div>
 
