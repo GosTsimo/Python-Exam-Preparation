@@ -18,8 +18,8 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto relative">
         {/* Main Footer Content */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full shadow-romantic mb-6 border border-white/60">
-            <Sparkles className="w-4 h-4 text-pink-deep hover:text-crimson-love hover:scale-110 hover:rotate-12 transition-all duration-300 cursor-pointer" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/95 backdrop-blur-sm rounded-full shadow-romantic mb-6 border border-pink-DEFAULT/20">
+            <Sparkles className="w-4 h-4 text-purple-deep hover:text-pink-DEFAULT hover:scale-110 hover:rotate-12 transition-all duration-300 cursor-pointer" />
             <span className="text-sm font-medium text-romantic-text">Keep Learning</span>
           </div>
           
@@ -45,7 +45,7 @@ export default function Footer() {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="px-4 py-2 bg-white/60 hover:bg-white rounded-full text-sm text-romantic-text hover:text-pink-dark transition-all duration-300 shadow-sm hover:shadow-romantic"
+              className="px-4 py-2 bg-white/70 hover:bg-gradient-to-r hover:from-pink-DEFAULT hover:to-purple-DEFAULT rounded-full text-sm text-romantic-text hover:text-white transition-all duration-300 shadow-sm hover:shadow-romantic hover:scale-105"
             >
               {link.label}
             </button>
@@ -85,7 +85,7 @@ export default function Footer() {
             <div className="flex items-center gap-4">
               <a
                 href="https://github.com/GosTsimo/Python-Exam-Preparation"
-                className="group text-romantic-text-secondary hover:text-pink-dark transition-all duration-300 hover:scale-110"
+                className="group p-2 rounded-full bg-white/10 hover:bg-pink-DEFAULT text-romantic-text hover:text-white transition-all duration-300 hover:scale-110"
                 onClick={(e) => {
                   e.preventDefault();
                   alert('Coming soon!');
@@ -95,7 +95,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://www.oundir.tech/"
-                className="group text-romantic-text-secondary hover:text-pink-dark transition-all duration-300 hover:scale-110"
+                className="group p-2 rounded-full bg-white/10 hover:bg-purple-DEFAULT text-romantic-text hover:text-white transition-all duration-300 hover:scale-110"
                 onClick={(e) => {
                   e.preventDefault();
                   alert('Contact: Oundir@oundir.tech');

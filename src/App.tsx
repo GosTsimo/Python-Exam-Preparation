@@ -87,13 +87,13 @@ function Navigation() {
                 className={`group relative px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 hover:scale-105 ${
                   isActive
                     ? 'bg-gradient-to-r from-pink-DEFAULT to-purple-DEFAULT text-white shadow-romantic hover:shadow-love-glow'
-                    : 'text-romantic-text-secondary hover:text-romantic-text hover:bg-gradient-to-r hover:from-pink-light/30 hover:to-purple-light/30'
+                    : 'text-romantic-text hover:text-white hover:bg-gradient-to-r hover:from-pink-DEFAULT/80 hover:to-purple-DEFAULT/80'
                 }`}
               >
                 <Icon className={`w-4 h-4 transition-all duration-300 ${
                   isActive 
                     ? 'text-white group-hover:scale-110' 
-                    : 'text-romantic-text-muted group-hover:text-pink-deep group-hover:scale-110 group-hover:rotate-12'
+                    : 'text-romantic-text group-hover:text-white group-hover:scale-110 group-hover:rotate-12'
                 }`} />
                 <span className="hidden sm:inline">{item.label}</span>
               </button>

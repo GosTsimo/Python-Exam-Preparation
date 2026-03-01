@@ -103,8 +103,8 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full shadow-romantic mb-8 animate-fade-in-up border border-white/60">
-          <Sparkles className="w-4 h-4 text-pink-deep hover:text-crimson-love transition-all duration-300 hover:scale-110 hover:rotate-12" />
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/95 backdrop-blur-sm rounded-full shadow-romantic mb-8 animate-fade-in-up border border-pink-DEFAULT/20">
+          <Sparkles className="w-4 h-4 text-purple-deep hover:text-pink-DEFAULT transition-all duration-300 hover:scale-110 hover:rotate-12" />
           <span className="text-sm font-medium text-romantic-text">Your Python Learning Journey</span>
         </div>
 
