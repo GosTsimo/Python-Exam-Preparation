@@ -84,7 +84,7 @@ export default function Footer() {
             {/* Links */}
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href="https://github.com/GosTsimo/Python-Exam-Preparation"
                 className="group text-romantic-text-secondary hover:text-pink-dark transition-all duration-300 hover:scale-110"
                 onClick={(e) => {
                   e.preventDefault();
@@ -94,11 +94,11 @@ export default function Footer() {
                 <Github className="w-5 h-5 group-hover:rotate-12 transition-all duration-300" />
               </a>
               <a
-                href="#"
+                href="https://www.oundir.tech/"
                 className="group text-romantic-text-secondary hover:text-pink-dark transition-all duration-300 hover:scale-110"
                 onClick={(e) => {
                   e.preventDefault();
-                  alert('Contact: pythonprep@example.com');
+                  alert('Contact: Oundir@oundir.tech');
                 }}
               >
                 <Mail className="w-5 h-5 group-hover:-rotate-12 transition-all duration-300" />
