@@ -38,25 +38,38 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom romantic palette
+        // Enhanced Love-inspired palette
         pink: {
-          light: '#ffeef2',
-          DEFAULT: '#ffb7c5',
-          dark: '#ff9eb0',
+          light: '#ffb8c6',
+          DEFAULT: '#ff8fa3',
+          dark: '#ff6b89',
+          deep: '#e74c7c',
         },
         purple: {
-          light: '#f8f0ff',
-          DEFAULT: '#e0c3fc',
-          dark: '#d4b0f5',
+          light: '#e2beff',
+          DEFAULT: '#c794f7',
+          dark: '#a777ea',
+          deep: '#8b5a9c',
+        },
+        rose: {
+          gold: '#f7a8b8',
+          blush: '#ffccd5',
         },
         peach: {
-          DEFAULT: '#ffdcc2',
-          dark: '#ffc9a8',
+          DEFAULT: '#ffb8a3',
+          light: '#ffd4c4',
+          dark: '#ff9980',
+        },
+        lavender: {
+          DEFAULT: '#dbbfff',
+          light: '#f0e6ff',
         },
         romantic: {
-          bg: '#fff5f7',
-          text: '#4a4a4a',
-          'text-secondary': '#7a7a7a',
+          bg: '#faf7fa',
+          'bg-light': '#fefcfe',
+          text: '#2c1810',
+          'text-secondary': '#5d4e75',
+          'text-muted': '#8b7fa8',
         },
       },
       fontFamily: {
@@ -75,9 +88,10 @@ module.exports = {
       },
       boxShadow: {
         xs: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
-        'romantic': '0 8px 32px rgba(255, 183, 197, 0.15)',
-        'romantic-lg': '0 12px 40px rgba(255, 183, 197, 0.2)',
-        'romantic-xl': '0 20px 60px rgba(255, 183, 197, 0.25)',
+        'romantic': '0 8px 32px rgba(255, 143, 163, 0.18), 0 4px 16px rgba(199, 148, 247, 0.12)',
+        'romantic-lg': '0 12px 40px rgba(255, 143, 163, 0.22), 0 6px 20px rgba(199, 148, 247, 0.15)',
+        'romantic-xl': '0 20px 60px rgba(255, 143, 163, 0.28), 0 10px 30px rgba(199, 148, 247, 0.18)',
+        'love-glow': '0 0 20px rgba(231, 76, 124, 0.3), 0 0 40px rgba(199, 148, 247, 0.2)',
       },
       keyframes: {
         "accordion-down": {

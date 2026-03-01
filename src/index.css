@@ -7,33 +7,46 @@
 @layer base {
   :root {
     --background: 340 50% 98%;
-    --foreground: 0 0% 29%;
+    --foreground: 0 0% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 29%;
+    --card-foreground: 0 0% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 29%;
-    --primary: 350 100% 86%;
-    --primary-foreground: 0 0% 29%;
-    --secondary: 270 80% 93%;
-    --secondary-foreground: 0 0% 29%;
-    --muted: 340 30% 95%;
-    --muted-foreground: 0 0% 48%;
-    --accent: 25 100% 88%;
-    --accent-foreground: 0 0% 29%;
+    --popover-foreground: 0 0% 15%;
+    --primary: 350 85% 75%;
+    --primary-foreground: 0 0% 15%;
+    --secondary: 270 60% 85%;
+    --secondary-foreground: 0 0% 15%;
+    --muted: 340 35% 92%;
+    --muted-foreground: 0 0% 35%;
+    --accent: 25 90% 80%;
+    --accent-foreground: 0 0% 15%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 340 30% 90%;
-    --input: 340 30% 90%;
-    --ring: 350 100% 86%;
+    --border: 340 35% 85%;
+    --input: 340 35% 88%;
+    --ring: 350 85% 75%;
     --radius: 0.75rem;
     
-    --pink-primary: #ffb7c5;
-    --purple-secondary: #e0c3fc;
-    --peach-accent: #ffdcc2;
-    --bg-romantic: #fff5f7;
-    --text-primary: #4a4a4a;
-    --text-secondary: #7a7a7a;
+    /* Enhanced Love-inspired palette */
+    --pink-primary: #ff8fa3;
+    --pink-light: #ffb8c6;
+    --pink-deep: #ff6b89;
+    --purple-secondary: #c794f7;
+    --purple-light: #e2beff;
+    --purple-deep: #a777ea;
+    --rose-gold: #f7a8b8;
+    --crimson-love: #e74c7c;
+    --lavender-dream: #dbbfff;
+    --peach-accent: #ffb8a3;
+    --bg-romantic: #faf7fa;
+    --bg-romantic-light: #fefcfe;
+    --text-primary: #2c1810;
+    --text-secondary: #5d4e75;
+    --text-muted: #8b7fa8;
     --white: #ffffff;
+    --love-gradient-1: #ff8fa3;
+    --love-gradient-2: #c794f7;
+    --love-gradient-3: #ffb8a3;
   }
 }
 
@@ -47,7 +60,7 @@
   }
   
   body {
-    @apply bg-[#fff5f7] text-foreground antialiased;
+    @apply bg-[#faf7fa] text-foreground antialiased;
     font-family: 'Inter', sans-serif;
   }
   
@@ -63,25 +76,34 @@
 @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, #ffb7c5 0%, #e0c3fc 100%);
+    background-image: linear-gradient(135deg, var(--love-gradient-1) 0%, var(--love-gradient-2) 50%, var(--love-gradient-3) 100%);
+  }
+  
+  .text-gradient-love {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, var(--crimson-love) 0%, var(--purple-deep) 40%, var(--rose-gold) 100%);
   }
   
   .bg-gradient-romantic {
-    background: linear-gradient(135deg, #fff5f7 0%, #ffeef2 50%, #f8f0ff 100%);
+    background: linear-gradient(135deg, var(--bg-romantic) 0%, var(--bg-romantic-light) 30%, #fef3ff 70%, var(--lavender-dream) 100%);
   }
   
   .bg-gradient-pink-purple {
-    background: linear-gradient(135deg, #ffb7c5 0%, #e0c3fc 100%);
+    background: linear-gradient(135deg, var(--pink-primary) 0%, var(--purple-secondary) 100%);
+  }
+  
+  .bg-gradient-love-deep {
+    background: linear-gradient(135deg, var(--pink-deep) 0%, var(--purple-deep) 100%);
   }
   
   .glass-card {
-    @apply bg-white/80 backdrop-blur-xl border border-white/50;
-    box-shadow: 0 8px 32px rgba(255, 183, 197, 0.15);
+    @apply bg-white/85 backdrop-blur-xl border border-white/60;
+    box-shadow: 0 8px 32px rgba(255, 143, 163, 0.18), 0 4px 16px rgba(199, 148, 247, 0.12);
   }
   
   .glass-card-strong {
-    @apply bg-white/90 backdrop-blur-2xl border border-white/60;
-    box-shadow: 0 12px 40px rgba(255, 183, 197, 0.2);
+    @apply bg-white/92 backdrop-blur-2xl border border-white/70;
+    box-shadow: 0 16px 48px rgba(255, 143, 163, 0.25), 0 8px 24px rgba(199, 148, 247, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.5);
   }
   
   .hover-lift {
@@ -90,7 +112,32 @@
   
   .hover-lift:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(255, 183, 197, 0.25);
+    box-shadow: 0 16px 48px rgba(255, 143, 163, 0.25), 0 8px 24px rgba(199, 148, 247, 0.15);
+  }
+  
+  .hover-love:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 0 25px rgba(231, 76, 124, 0.4), 0 0 50px rgba(199, 148, 247, 0.2);
+  }
+  
+  .bg-gradient-love-subtle {
+    background: linear-gradient(135deg, #fef7f9 0%, #f9f3ff 100%);
+  }
+  
+  .border-love {
+    border-image: linear-gradient(135deg, var(--pink-primary), var(--purple-secondary)) 1;
+  }
+  
+  .text-love-primary {
+    color: var(--text-primary);
+  }
+  
+  .text-love-secondary {
+    color: var(--text-secondary);
+  }
+  
+  .text-love-muted {
+    color: var(--text-muted);
   }
   
   .blob {
@@ -199,20 +246,21 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff5f7;
+  background: var(--bg-romantic);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #ffb7c5, #e0c3fc);
-  border-radius: 4px;
+  background: linear-gradient(180deg, var(--pink-primary), var(--purple-secondary));
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #ff9eb0, #d4b0f5);
+  background: linear-gradient(180deg, var(--pink-deep), var(--purple-deep));
 }
 
 /* Selection color */
 ::selection {
-  background: rgba(255, 183, 197, 0.4);
-  color: #4a4a4a;
+  background: rgba(255, 143, 163, 0.35);
+  color: var(--text-primary);
 }
