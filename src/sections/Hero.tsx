@@ -130,7 +130,7 @@ export default function Hero() {
           <Button
             onClick={scrollToContent}
             size="lg"
-            className="group relative px-8 py-6 text-lg font-medium bg-gradient-to-r from-pink-DEFAULT to-purple-DEFAULT hover:from-pink-dark hover:to-purple-dark text-white rounded-2xl shadow-romantic-lg hover:shadow-romantic-xl transition-all duration-300 hover:-translate-y-1"
+            className="group relative px-8 py-6 text-lg font-medium bg-gradient-to-r from-pink-dark to-purple-dark hover:from-pink-deep hover:to-purple-deep text-white rounded-2xl shadow-romantic-lg hover:shadow-romantic-xl transition-all duration-300 hover:-translate-y-1"
           >
             <span className="relative z-10 flex items-center gap-2">
               Start Learning

@@ -360,7 +360,7 @@ export default function Quiz() {
                   {showResult && (
                     <Button
                       onClick={nextQuestion}
-                      className="w-full mt-6 bg-gradient-to-r from-pink-DEFAULT to-purple-DEFAULT hover:from-pink-dark hover:to-purple-dark text-white"
+                      className="w-full mt-6 bg-gradient-to-r from-pink-dark to-purple-dark hover:from-pink-deep hover:to-purple-deep text-white shadow-romantic hover:shadow-romantic-lg transition-all duration-300"
                     >
                       {currentQuestion < questions.length - 1
                         ? 'Next Question'
