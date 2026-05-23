@@ -23,13 +23,33 @@ export default function Footer() {
             <span className="text-sm font-medium text-romantic-text">Keep Learning</span>
           </div>
           
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-romantic-text mb-4">
-            Made with <span className="text-red-400">love</span> 
+          <h2 className="font-display text-4xl sm:text-5xl font-bold text-romantic-text mb-6 flex flex-wrap items-center justify-center gap-4">
+            Made with 
+            <div className="relative group cursor-pointer inline-block">
+              {/* Glowing Aura */}
+              <div className="absolute inset-0 bg-red-500 rounded-full blur-xl opacity-60 group-hover:opacity-100 group-hover:blur-2xl transition-all duration-500 animate-pulse" />
+              {/* 3D Heart SVG */}
+              <Heart 
+                className="w-12 h-12 text-red-500 fill-red-500 relative z-10 
+                          drop-shadow-[0_8px_8px_rgba(220,38,38,0.8)] 
+                          transition-transform duration-500 group-hover:scale-130 
+                          hover:-translate-y-2 animate-bounce flex-shrink-0" 
+                strokeWidth={1.5}
+              />
+              {/* Funny hover message */}
+              <div className="absolute -top-10 -right-12 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-2xl text-sm font-bold text-pink-600 shadow-xl whitespace-nowrap transform rotate-6 scale-90 group-hover:scale-100 pointer-events-none z-20 border border-pink-200">
+                Queen FATI 👑💕
+              </div>
+            </div>
+            for <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500 uppercase tracking-widest relative px-2">
+              Fati
+              <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-pink-500 to-red-500 rounded-full animate-pulse" />
+            </span>
           </h2>
           
-          <p className="text-romantic-text-secondary max-w-xl mx-auto">
-            Remember: Every expert was once a beginner. Keep practicing, stay curious, 
-            and you'll master Python in no time!
+          <p className="text-romantic-text-secondary max-w-xl mx-auto text-lg leading-relaxed">
+            Every expert was once a beginner...<br/>
+            <span className="font-medium text-romantic-text">Except my code! My code is a mess, but my love for FATI is 100% bug-free! 🐛🚫🥰</span>
           </p>
         </div>
 
@@ -74,10 +94,10 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             {/* Copyright */}
             <div className="flex items-center gap-2 text-sm text-romantic-text-secondary">
-              <span>© 2025 Python Exam Prep</span>
+              <span>© {new Date().getFullYear()} Python Exam Prep</span>
               <span>•</span>
-              <span className="flex items-center gap-1">
-                Made with <Heart className="w-3 h-3 text-red-400 fill-red-400 hover:scale-125 hover:text-red-500 transition-all duration-300 animate-pulse cursor-pointer" /> for YOU
+              <span className="flex items-center gap-2">
+                Codé avec passion, mais surtout pour <span className="font-bold text-pink-500 animate-pulse text-base">FATI</span> ✨
               </span>
             </div>
 
