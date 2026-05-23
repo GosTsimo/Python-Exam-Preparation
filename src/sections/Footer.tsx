@@ -49,7 +49,7 @@ export default function Footer() {
           
           <p className="text-romantic-text-secondary max-w-xl mx-auto text-lg leading-relaxed">
             Every expert was once a beginner...<br/>
-            <span className="font-medium text-romantic-text">Except my code! My code is a mess, but my love for FATI is 100% bug-free! 🐛🚫🥰</span>
+            <span className="font-medium text-romantic-text">404: Girl like FATI not found 😌✨</span>
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export default function Footer() {
               <span>© {new Date().getFullYear()} Python Exam Prep</span>
               <span>•</span>
               <span className="flex items-center gap-2">
-                Codé avec passion, mais surtout pour <span className="font-bold text-pink-500 animate-pulse text-base">FATI</span> ✨
+                Codé avec passion, mais surtout pour <span className="font-bold text-pink-500 animate-pulse text-base">youuu</span> ✨
               </span>
             </div>
 
