@@ -42,7 +42,7 @@ export default function Footer() {
               </div>
             </div>
             for <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500 uppercase tracking-widest relative px-2">
-              Fati
+              YOUUUU
               <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-gradient-to-r from-pink-500 to-red-500 rounded-full animate-pulse" />
             </span>
           </h2>
@@ -97,7 +97,7 @@ export default function Footer() {
               <span>© {new Date().getFullYear()} Python Exam Prep</span>
               <span>•</span>
               <span className="flex items-center gap-2">
-                Codé avec passion, mais surtout pour <span className="font-bold text-pink-500 animate-pulse text-base">youuu</span> ✨
+                Codé avec passion, mais surtout pour <span className="font-bold text-pink-500 animate-pulse text-base">FATI</span> ✨
               </span>
             </div>
 
